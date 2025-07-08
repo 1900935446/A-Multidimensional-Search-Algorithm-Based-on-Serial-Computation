@@ -1,0 +1,28 @@
+clc;clear all;close all;
+load F1.mat;
+AabMedian1(1,:)=abMedian;
+load F2.mat;
+AabMedian1(2,:)=abMedian;
+load F3.mat;
+AabMedian1(3,:)=abMedian;
+load F4.mat;
+AabMedian1(4,:)=abMedian;
+load F5.mat;
+AabMedian1(5,:)=abMedian;
+load F6.mat;
+AabMedian1(6,:)=abMedian;
+load F7.mat;
+AabMedian1(7,:)=abMedian;
+load F8.mat;
+AabMedian1(8,:)=abMedian;
+load F9.mat;
+AabMedian1(9,:)=abMedian;
+load F10.mat;
+AabMedian1(10,:)=abMedian;
+load F11.mat;
+AabMedian1(11,:)=abMedian;
+load F12.mat;
+AabMedian1(12,:)=abMedian;
+[P,Q,D]=friedman(AabMedian1);
+B=D.meanranks ;
+[~,Vual]=sort(B)
